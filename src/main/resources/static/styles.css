@@ -1,0 +1,16 @@
+footer, header {
+    display: block;
+    text-align: center;
+    background: rgba(0,30,71,0.58);
+}
+
+.content {
+    text-align: center;
+    padding: 20px 120px 0px 120px;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

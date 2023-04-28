@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pl" xmlns:th="http://www.thymeleaf.org">
+<head th:replace="~{fragments :: head(title='Email to Shelby Company')}">
+</head>
+<body>
+<div th:replace="~{fragments :: header}"></div>
+<form method="POST" action="/send">
+
+    <div class="mb-3">
+        <label for="name" class="form-label">Imię:</label>
+        <input type="text" name="name" class="form-control" id="name" placeholder="Wpisz swoje imię" required>
+    </div>
+
+    <div class="mb-3">
+        <label for="email" class="form-label">Email:</label>
+        <input type="email" name="email" class="form-control" id="email" placeholder="Wpisz swój e-mail" required>
+    </div>
+
+    <div class="mb-3">
+        <label for="description" class="form-label">Treść:</label>
+        <input type="text" name="description" class="form-control" id="description" placeholder="Wpisz swoją wiadomość" required>
+    </div>
+
+    <div class="mb-3 form-check">
+        <label class="form-check-label" for="confirmation">Wyślij mi potwierdzenie</label>
+        <input type="checkbox" name="confirmation" class="form-check-input" id="confirmation" style="margin-left: 20px; margin-right: 20px">
+    </div>
+
+    <input class="btn btn-dark" type="submit" value="Wyślij!">
+
+</form>
+
+<div th:replace="~{fragments :: footer}"></div>
+
+</body>
+</html>
